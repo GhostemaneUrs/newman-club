@@ -76,7 +76,7 @@ export const CardEvents = () => {
     )
   }
   return (
-    <>
+    <div className='flex flex-nowrap overflow-x-auto gap-4 justify-center items-center pb-[100px]  m-auto relative z-10'>
       {cardsEvents.map(card => {
         return (
           <div
@@ -110,6 +110,6 @@ export const CardEvents = () => {
           </div>
         )
       })}
-    </>
+    </div>
   )
 }
