@@ -1,10 +1,15 @@
 @use 'tailwindcss/base';
 @use 'tailwindcss/components';
 @use 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;900&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Red Hat Display', sans-serif;
+}
+
+.cards-section::-webkit-scrollbar {
+  width: 0px;
 }
