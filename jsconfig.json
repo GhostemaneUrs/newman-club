@@ -5,7 +5,7 @@
       "@/hook/*": ["./src/hooks/*"],
       "@/icon/*": ["./src/assets/icons/*"],
       "@/image/*": ["./src/assets/images/*"],
-      "@/video/*": ["./src/assets/videos/*"],
+      "@/video/*": ["./public/videos"],
       "@components/*": ["./src/components/*"]
     }
   }
