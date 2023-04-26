@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '@/icon/logo.svg'
+import { RiMenu4Fill } from 'react-icons/ri'
 import { FiInstagram } from 'react-icons/fi'
 import { TfiFacebook } from 'react-icons/tfi'
 export const Header = () => {
@@ -40,7 +41,10 @@ export const Header = () => {
           className='w-full max-w-[195px] h-auto'
         />
       </div>
-      <ul className='flex gap-11 w-full items-center justify-end'>
+      <div className='flex justify-end items-center w-full cursor-pointer xl:hidden'>
+        <RiMenu4Fill className='text-white text-[36px] block  -rotate-45 ' />
+      </div>
+      <ul className='hidden xl:flex xl:gap-7 2xl:gap-11 w-full items-center justify-end'>
         {menu.map(item => {
           return (
             <li
