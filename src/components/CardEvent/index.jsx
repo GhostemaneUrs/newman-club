@@ -76,7 +76,7 @@ export const CardEvents = () => {
     )
   }
   return (
-    <div className='flex flex-nowrap overflow-x-auto gap-4 justify-center items-center pb-[100px]  m-auto relative z-10'>
+    <div className='flex flex-nowrap overflow-x-auto gap-4 justify-center items-center pb-[100px] m-auto relative z-10'>
       {cardsEvents.map(card => {
         return (
           <div
@@ -93,7 +93,7 @@ export const CardEvents = () => {
               <span className='text-[45px] font-bold text-[#F1F5F8] font-poppins'>
                 {card.title}
               </span>
-              <div className='absolute bottom-0 left-0 w-full '>
+              <div className='absolute bottom-0 left-0 w-full'>
                 <div className='relative left-0 -bottom-[96px] flex flex-col items-center justify-center gap-5'>
                   <div className='border-2 solid border-[#FF7E54] w-0 h-[84px] hidden group-hover:block transition-all duration-300 ease-in mb-5' />
                   <div className='hidden group-hover:flex flex-col items-center justify-center'>
