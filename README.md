@@ -1,38 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Test Ingenuity & Solutions: Newman club
 
-## Getting Started
+Bienvenido a Newman club, una pagina web donde encontraras toda la información relacionada con Newman club catholic organization, sus eventos, y mucho mas.
 
-First, run the development server:
+## Tecnologías utilizadas
 
-```bash
-npm run dev
-# or
+He elegido cuidadosamente las tecnologías que utilice para desarrollar esta página web con el fin de ofrecer una experiencia de usuario óptima. A continuación, te presento las tecnologías utilizadas:
+
+- NextJS: fue elegido por su capacidad para pre-renderizar páginas, lo que mejora la velocidad de carga y la experiencia del usuario. También cuenta con un enrutador integrado y optimización de código, lo que lo hace adecuado para proyectos grandes y complejos.
+- Tailwindcss: se utilizó para la maquetación y diseño de estilos del proyecto. Su gran variedad de clases reutilizables facilitó la creación de diseños responsivos y personalizados.
+
+## Documentación de las tecnologías usadas
+
+Si deseas conocer más acerca de las tecnologías que utilizamos para el desarrollo de esta página web, te recomendamos revisar la documentación oficial de las mismas:
+
+- [NextJS](https://nextjs.org/docs)
+- [Tailwindcss](https://tailwindcss.com/docs)
+
+## Funcionamiento del proyecto
+
+La página web se divide en las siguientes secciones principales:
+
+- Eventos: Aquí se muestran los eventos que se han realizado y los que se realizarán, con su respectiva información.
+- Crew: Esta sección muestra información sobre los miembros del club y sus objetivos como organización.
+- ¿Qué hay de nuevo?: Aquí se muestran las últimas noticias relacionadas con el club.
+- Memorias / Galería: En esta sección se muestran las fotos de los eventos realizados por el club.
+- Newman Música / Podcast: Esta sección presenta los podcast realizados por el club.
+- Contacto: Esta sección muestra información de contacto del club.
+
+## Características del proyecto
+
+Las características principales de la aplicación incluyen:
+
+- Informar al usuario acerca de las actividades que realiza Newman como club.
+- Incentivar al usuario a conocer los eventos que realizará Newman como club.
+- Ofrecer una visualización clara y detallada de la información de los eventos.
+
+## Instalación del proyecto
+
+Si deseas instalar el proyecto en tu equipo, sigue estos sencillos pasos:
+
+- Se requiere tener instalado [Node.js](https://nodejs.org/) v10+.
+- Clonar el repositorio con el comando git clone + la ruta del proyecto.
+- Guía para la instalación de las dependencias para correr el proyecto.
+
+```sh
+cd newman-club
+yarn
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Abrir [http://localhost:3000](http://localhost:3000) con su navegador para ver el resultado.
+- Puede entrar [aquí](https://newman-club.vercel.app/) para ver el proyecto en vivo.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Previsualización del proyecto
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Version móvil](https://xd.adobe.com/view/c2f43c45-217c-4885-9c61-987ac6beea8c-97a7/specs/)
+- [Version escritorio](https://xd.adobe.com/view/c2f43c45-217c-4885-9c61-987ac6beea8c-97a7/screen/c1d15e18-ced0-4a4e-81bc-b72deb5e6f0d/specs/)
