@@ -151,7 +151,7 @@ const Home = () => {
             Events
           </h1>
         </div>
-        <div className='flex flex-col items-center  max-h-max w-full relative cards-section mb-[50px] 2xl:mb-[150px] m-auto justify-center'>
+        <div className='flex flex-col items-center  max-h-max w-full relative cards-section mb-[50px] xl:mb-[150px] m-auto justify-center'>
           <CardEvents />
         </div>
         <div className='flex flex-col items-center justify-center text-center'>
