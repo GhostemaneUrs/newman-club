@@ -76,7 +76,7 @@ export const CardEvents = () => {
     )
   }
   return (
-    <div className='flex flex-nowrap overflow-x-auto gap-4 justify-center items-center pb-[100px] m-auto relative z-10'>
+    <div className='flex flex-wrap gap-4 lg:gap-2 xl:gap-4 justify-center items-center h-full m-auto relative z-10 w-full'>
       {cardsEvents.map(card => {
         return (
           <div
@@ -84,17 +84,29 @@ export const CardEvents = () => {
             style={{
               backgroundImage: `url(${card.image})`
             }}
-            className='w-[398px] h-[551px] bg-cover bg-center rounded-[20px] object-cover cursor-pointer group relative'
+            className={`w-[354px] h-[183px] md:w-[350px] md:h-[300px] lg:w-[240px] lg:h-[350px] xl:w-[300px] xl:h-[450px] 2xl:w-[348px] 2xl:h-[551px] bg-cover bg-center rounded-[20px] object-cover cursor-pointer group relative`}
             onClick={() => {
               handleCardClick(card.id)
             }}
           >
             <div className='bg-shadow-card w-full h-full flex flex-col items-center justify-center rounded-[20px] relative'>
-              <span className='text-[45px] font-bold text-[#F1F5F8] font-poppins'>
-                {card.title}
-              </span>
-              <div className='absolute bottom-0 left-0 w-full'>
-                <div className='relative left-0 -bottom-[96px] flex flex-col items-center justify-center gap-5'>
+              <div className='flex flex-col gap-4'>
+                <div>
+                  <span className='text-[45px] font-bold text-[#F1F5F8] font-poppins'>
+                    {card.title}
+                  </span>
+                </div>
+                <div className='flex xl:hidden flex-col items-center justify-center'>
+                  <span className='text-[80px] text-[#FF7E54] leading-[40px] font-bold font-poppins'>
+                    {card.event.day}
+                  </span>
+                  <span className='text-[34px] text-[#FF7E54] font-bold uppercase font-poppins'>
+                    {card.event.month}
+                  </span>
+                </div>
+              </div>
+              <div className='absolute bottom-0 left-0 w-full hidden xl:block'>
+                <div className='relative left-0 -bottom-[140px] 2xl:-bottom-[96px] flex flex-col items-center justify-center gap-5'>
                   <div className='border-2 solid border-[#FF7E54] w-0 h-[84px] hidden group-hover:block transition-all duration-300 ease-in mb-5' />
                   <div className='hidden group-hover:flex flex-col items-center justify-center'>
                     <span className='text-[192px] text-[#FF7E54] leading-[100px] font-bold font-poppins'>

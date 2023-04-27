@@ -62,7 +62,7 @@ export const CardBlog = () => {
     }
   ]
   return (
-    <div className='flex flex-nowrap overflow-x-auto gap-4 justify-center items-center m-auto relative z-10'>
+    <div className='flex flex-wrap gap-4 justify-center items-center m-auto relative z-10'>
       {cardBlog.map(card => {
         return (
           <div
@@ -70,7 +70,7 @@ export const CardBlog = () => {
             style={{
               backgroundImage: `url(${card.image})`
             }}
-            className='w-[398px] h-[528px] bg-cover bg-center rounded-[20px] object-cover cursor-pointer relative group'
+            className='w-[320px] h-[338px] sm:w-[355px] md:w-[350px] md:h-[300px] lg:w-[240px] lg:h-[350px] xl:w-[300px] xl:h-[450px] 2xl:w-[348px] 2xl:h-[551px] bg-cover bg-center rounded-[20px] object-cover cursor-pointer group relative'
           >
             <div className='bg-shadow-card rounded-[20px] w-full h-full flex justify-center items-end'>
               <div className='absolute top-0 left-0'>
@@ -88,7 +88,16 @@ export const CardBlog = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex flex-col px-[34px] w-full'>
+              <div className='flex justify-center items-center xl:hidden flex-col px-[34px] pb-[35px] w-full'>
+                <span className='text-[#F5F5F5] text-sm font-poppins'>
+                  {card?.name}
+                </span>
+                <span className='text-[#F5F5F5] text-[35px] font-poppins font-bold'>
+                  {card?.title}
+                </span>
+              </div>
+
+              <div className='hidden xl:flex flex-col px-[34px] w-full'>
                 <span className='text-[#F5F5F5] text-sm font-poppins'>
                   {card?.name}
                 </span>
